@@ -21,7 +21,7 @@ node {
       }
    }
    stage('CodeAnalysis') {        
-      withSonarQubeEnv("SonarCloudServer") {
+      withSonarQubeEnv("SonarCloud") {
                      sh "${tool("SonarScanner")}/bin/sonar-scanner"
                   }
             }
