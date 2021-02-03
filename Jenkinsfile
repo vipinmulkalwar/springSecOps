@@ -26,7 +26,7 @@ node {
                   }
             }
    stage('DeploytoTomcat') {
-      sh 'cp $(pwd)/target/*.war /opt/tomcat/webapps/'
+      sh 'cp $(pwd)/target/*.war /home/training/DevSecOps/apache-tomcat-9.0.41/webapps/'
    } 
    stage('FunctionalTesting') {
       sleep 60
